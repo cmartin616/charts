@@ -44,24 +44,3 @@ persistence:
     mountPath: /app/data/
     accessMode: ReadWriteOnce
     size: 10Gi
-
-api:
-  image:
-    # -- image repository
-    repository: hkotel/mealie
-    # -- image tag
-    tag: api-v1.0.0beta-2
-    # -- image pull policy
-    pullPolicy: IfNotPresent
-
-  #  -- environment variables. See [backend config](https://nightly.mealie.io/documentation/getting-started/installation/backend-config/) for more details.
-  # @default -- See below
-  env:
-    # -- Set the container timezone
-    TZ: UTC
-
-  #  -- volume mounts. Name should match a key in .Values.persistence
-  # @default -- See below
-  volumeMounts:
-    - name: api-data
-      mountPath: /app/data/
