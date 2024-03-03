@@ -1,0 +1,37 @@
+apiVersion: v1
+entries:
+  mealie:
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: changed
+          description: Upgraded `common` chart dependency to version 4.5.2
+    apiVersion: v2
+    appVersion: v1.2.0
+    created: "2024-03-03T17:29:34.718141724Z"
+    dependencies:
+    - name: common
+      repository: https://library-charts.k8s-at-home.com
+      version: 4.5.2
+    description: Mealie is a self hosted recipe manager and meal planner with a RestAPI
+      backend and a reactive frontend application built in Vue for a pleasant user
+      experience for the whole family.
+    digest: 0155d9df74df57a674f8b5f61eeacfb05090543ac0068be7027204d453a329b9
+    home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/mealie
+    icon: https://raw.githubusercontent.com/hay-kot/mealie/gh-pages/assets/img/favicon.png
+    keywords:
+    - mealie
+    kubeVersion: '>=1.16.0-0'
+    maintainers:
+    - email: me@bjw-s.dev
+      name: bjw-s
+    - email: jonathan@jonnobrow.co.uk
+      name: jonnobrow
+    - name: cmartin616
+    - email: cmartin616@gmail.com
+    name: mealie
+    sources:
+    - https://github.com/hay-kot/mealie
+    urls:
+    - https://github.com/cmartin616/helm-charts/releases/download/mealie-5.1.3/mealie-5.1.3.tgz
+    version: 5.1.3
+generated: "2024-03-03T17:29:34.718152814Z"
