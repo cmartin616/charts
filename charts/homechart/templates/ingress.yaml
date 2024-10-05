@@ -6,7 +6,7 @@ metadata:
     {{- include "homechart.labels" . | nindent 4 }}
   {{- with .Values.homechart.ingress.annotations }}
   annotations:
-  {{ toYaml . | indent 4 }}
+    {{ toYaml . | indent 4 }}
   {{- end }}
 spec:
   ingressClassName: {{ .Values.homechart.ingress.ingressClassName }}
